@@ -21,6 +21,10 @@ export default defineEventHandler(
   async (event): Promise<Project[]> => {
     const config = useRuntimeConfig(event);
 
+    if (!config.githubApiKey) {
+      return [];
+    }
+
     const response = await $fetch<GithubReposoryResponse>(
       'https://api.github.com/graphql',
       {
