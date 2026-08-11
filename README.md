@@ -2,4 +2,4 @@
 
 Personal portfolio website.
 
-Thanks hougesen for the original template :) 
+Thanks hougesen :) 
