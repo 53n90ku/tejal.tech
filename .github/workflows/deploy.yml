@@ -25,6 +25,8 @@ jobs:
           cache: "pnpm"
       - name: Install dependencies
         run: pnpm install --no-frozen-lockfile
+        env:
+          PNPM_CONFIG_VERIFY_DEPS_BEFORE_RUN: false
       - name: Static HTML export with Nuxt
         run: pnpm run generate
       - name: Upload artifact
