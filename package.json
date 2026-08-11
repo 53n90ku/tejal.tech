@@ -1,0 +1,44 @@
+{
+  "name": "tejal.tech",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Personal website hosted at tejal.tech",
+  "homepage": "https://tejal.tech",
+  "repository": {
+    "url": "https://github.com/53n90ku/tejal.tech"
+  },
+  "contributors": [
+    {
+      "name": "Tejal"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/53n90ku/tejal.tech"
+  },
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "lint:biome": "biome check --apply .",
+    "lint:eslint": "nuxt module build . && eslint --fix .",
+    "lint:prettier": "prettier --write .",
+    "postinstall": "nuxt prepare",
+    "preview": "nuxt preview"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.11",
+    "@nuxt/content": "^3.6.3",
+    "@nuxt/eslint": "^1.4.1",
+    "@nuxt/image": "^1.10.0",
+    "@nuxtjs/seo": "^3.1.7",
+    "@tailwindcss/vite": "^4.1.11",
+    "@upstash/redis": "^1.35.1",
+    "eslint": "^9.30.0",
+    "nuxt": "^4.0.3",
+    "prettier": "^3.5.3",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0",
+    "tailwindcss": "^4.1.11",
+    "vue-component-type-helpers": "^3.0.1"
+  }
+}
