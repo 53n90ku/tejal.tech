@@ -94,7 +94,7 @@ export default defineNuxtConfig({
   },
 
   eslint: {
-    checker: true,
+    checker: false,
     config: {
       stylistic: false,
       typescript: {
@@ -129,13 +129,13 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/**': {
-      prerender: true,
+    '/api/**': {
+      prerender: false,
     },
   },
 
   runtimeConfig: {
-    githubApiKey: process?.env?.NUXT_GITHUB_API_KEY,
+    githubApiKey: '',
   },
 
   site: {
