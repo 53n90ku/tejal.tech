@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const baseTitle = 'Tejal | Software Developer';
+const baseTitle = '53n90ku';
 const baseDescription =
   'Software developer. Lover of all things programming - always learning new stuff.';
 const baseOgImage = '/og-image.png';
