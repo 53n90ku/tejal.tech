@@ -40,5 +40,15 @@
     "remark-math": "^6.0.0",
     "tailwindcss": "^4.1.11",
     "vue-component-type-helpers": "^3.0.1"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "@tailwindcss/oxide",
+      "better-sqlite3",
+      "esbuild",
+      "sharp",
+      "unrs-resolver"
+    ]
   }
 }
