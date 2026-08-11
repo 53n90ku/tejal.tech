@@ -116,10 +116,7 @@ export default defineNuxtConfig({
     prerender: {
       crawlLinks: true,
       routes: [
-        '/sitemap.xml',
-        '/blog/choosing-a-tech-stack-as-a-junior-developer',
-        '/blog/rogue-one-a-malware-story',
-        '/blog/undergraduate-thesis',
+        '/',
         '/archives',
       ],
     },
@@ -132,13 +129,7 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/': {
-      prerender: false,
-    },
-    '/api/*': {
-      prerender: false,
-    },
-    '/blog/*': {
+    '/**': {
       prerender: true,
     },
   },
