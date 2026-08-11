@@ -18,17 +18,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: corepack enable
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-          cache: "pnpm"
+          cache: "npm"
       - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile
-        env:
-          PNPM_CONFIG_VERIFY_DEPS_BEFORE_RUN: false
+        run: npm install
       - name: Static HTML export with Nuxt
-        run: pnpm run generate
+        run: npm run generate
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
